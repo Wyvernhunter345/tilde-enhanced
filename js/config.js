@@ -30,7 +30,7 @@ const CONFIG = {
       search: '/drive/search?q={}',
       color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
       icon: 'drive',
-      quickLaunch: false,
+      quickLaunch: true,
     },
     {
       category: 'General',
@@ -261,7 +261,7 @@ const CONFIG = {
   /**
    * Show keys instead of icons
    */
-  showKeys: false,
+  showKeys: true,
 
   /**
    * The delimiter between a command key and your search query. For example,

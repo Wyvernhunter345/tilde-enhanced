@@ -115,7 +115,7 @@ const CONFIG = {
       category: 'Tech',
       name: 'dynadot',
       key: 'dd',
-      url: 'https://https://www.dynadot.com/',
+      url: 'https://www.dynadot.com/',
       search: '/search?q={}',
       color: '#212121',
       icon: 'dd',

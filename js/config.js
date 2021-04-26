@@ -7,15 +7,15 @@ const CONFIG = {
    * Update line 11 and 13 if you prefer using Google.
    */
   commands: [{
-      name: 'Duckduckgo',
+      name: 'google',
       key: '*',
-      url: 'https://duckduckgo.com',
-      search: '/?q={}'
+      url: 'https://google.com',
+      search: '/search?q={}'
     },
     {
       category: 'General',
       name: 'Mail',
-      key: 'm',
+      key: 'gm',
       url: 'https://gmail.com',
       search: '/#search/text={}',
       color: 'linear-gradient(135deg, #dd5145, #dd5145)',
@@ -25,7 +25,7 @@ const CONFIG = {
     {
       category: 'General',
       name: 'Drive',
-      key: 'd',
+      key: 'dr',
       url: 'https://drive.google.com',
       search: '/drive/search?q={}',
       color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
@@ -44,7 +44,7 @@ const CONFIG = {
     {
       category: 'General',
       name: 'Messages',
-      key: 'msg',
+      key: 'ms',
       url: 'https://messages.google.com',
       color: 'linear-gradient(135deg, #25D366, #128C7E, #075E54)',
       icon: 'msg',
@@ -53,7 +53,7 @@ const CONFIG = {
     {
       category: 'General',
       name: 'Outlook',
-      key: 'outlook',
+      key: 'ou',
       url: 'https://outlook.office365.com/owa/?realm=endeavour.sa.edu.au&exsvurl=1&ll-cc=3081&modurl=0',
       color: '#7289da',
       icon: 'outlook',
@@ -64,7 +64,7 @@ const CONFIG = {
     {
       category: 'Tech',
       name: 'GitHub',
-      key: 'g',
+      key: 'gi',
       url: 'https://github.com',
       search: '/search?q={}',
       color: 'linear-gradient(135deg, #2b2b2b, #3b3b3b)',
@@ -74,7 +74,7 @@ const CONFIG = {
     {
       category: 'Tech',
       name: '1337x',
-      key: '1337',
+      key: '13',
       url: 'https://1337x.to',
       search: '/search?q={}',
       color: 'linear-gradient(135deg, #53341C, #F48024)',
@@ -104,7 +104,7 @@ const CONFIG = {
     {
       category: 'Tech',
       name: 'Liam',
-      key: 'liam',
+      key: 'lb',
       url: 'https://leafandjam.github.io',
       search: '/search?q={}',
       color: '#212121',
@@ -117,7 +117,7 @@ const CONFIG = {
     {
       category: 'Fun',
       name: 'YouTube',
-      key: 'y',
+      key: 'yt',
       url: 'https://youtube.com',
       search: '/results?search_query={}',
       color: 'linear-gradient(135deg, #cd201f, #cd4c1f)',
@@ -127,7 +127,7 @@ const CONFIG = {
     {
       category: 'Fun',
       name: 'Reddit',
-      key: 'r',
+      key: 're',
       url: 'https://reddit.com',
       search: '/search?q={}',
       color: 'linear-gradient(135deg, #FF8456, #FF4500)',
@@ -137,7 +137,7 @@ const CONFIG = {
     {
       category: 'Fun',
       name: 'Plex',
-      key: 'plex',
+      key: 'px',
       url: 'https://app.plex.tv/desktop',
       color: 'linear-gradient(135deg, #E50914, #CB020C)',
       icon: 'plex',
@@ -146,7 +146,7 @@ const CONFIG = {
     {
       category: 'Fun',
       name: 'Spotify',
-      key: 's',
+      key: 'sp',
       url: 'https://open.spotify.com/',
       search: '/search/{}',
       color: '#1dd35e',
@@ -158,7 +158,7 @@ const CONFIG = {
     {
       category: 'Server',
       name: 'unRAID',
-      key: 'unraid',
+      key: 'un',
       url: 'https://leafandjam.duckdns.org',
       search: '/search?q={}&src=typed_query',
       color: 'linear-gradient(135deg, #1DA1F2, #19608F)',
@@ -168,7 +168,7 @@ const CONFIG = {
     {
       category: 'Server',
       name: 'Radarr',
-      key: 'radarr',
+      key: 'ra',
       url: 'https://leafandjam.duckdns.org/radarr',
       color: 'linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)',
       icon: 'radarr',
@@ -177,7 +177,7 @@ const CONFIG = {
     {
       category: 'Server',
       name: 'Sonarr',
-      key: 'sonarr',
+      key: 'so',
       url: 'https://leafandjam.duckdns.org/sonarr',
       search: '/search/results/all/?keywords={}',
       color: 'linear-gradient(135deg, #006CA4, #0077B5)',
@@ -187,7 +187,7 @@ const CONFIG = {
     {
       category: 'Server',
       name: 'Qbit',
-      key: 'qbit',
+      key: 'qb',
       url: 'https://leafqbit.duckdns.org',
       color: 'linear-gradient(135deg, #FFF, #3F3F3F)',
       icon: 'qbit',

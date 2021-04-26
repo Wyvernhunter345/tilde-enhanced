@@ -64,7 +64,7 @@ const CONFIG = {
     {
       category: 'Tech',
       name: 'GitHub',
-      key: 'gi',
+      key: 'gh',
       url: 'https://github.com',
       search: '/search?q={}',
       color: 'linear-gradient(135deg, #2b2b2b, #3b3b3b)',
@@ -105,13 +105,22 @@ const CONFIG = {
       category: 'Tech',
       name: 'Liam',
       key: 'lb',
-      url: 'https://leafandjam.github.io',
+      url: 'https://liambelgraver.com',
       search: '/search?q={}',
       color: '#212121',
       icon: 'lb',
       quickLaunch: true,
     },
-
+    {
+      category: 'Tech',
+      name: 'dynadot',
+      key: 'dd',
+      url: 'https://https://www.dynadot.com/',
+      search: '/search?q={}',
+      color: '#212121',
+      icon: 'dd',
+      quickLaunch: true,
+    },
 
 
     {

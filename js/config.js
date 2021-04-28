@@ -7,10 +7,17 @@ const CONFIG = {
    * Update line 11 and 13 if you prefer using Google.
    */
   commands: [{
-      name: 'google',
+      name: 'DuckDuckGo',
       key: '*',
+      url: 'https://duckduckgo.com',
+      search: '/?q={}'
+    },
+    {
+      name: 'Google',
+      key: 'gl',
       url: 'https://google.com',
-      search: '/search?q={}'
+      search: '/search?q={}',
+      color: '#4284f4',
     },
     {
       category: 'General',
@@ -21,6 +28,13 @@ const CONFIG = {
       color: 'linear-gradient(135deg, #dd5145, #dd5145)',
       icon: 'mail',
       quickLaunch: true,
+        },
+    {
+      name: 'Yandex',
+      key: 'yd',
+      url: 'https://yandex.com',
+      search: '/search/?text={}',
+      color: 'linear-gradient(135deg, #fc4423, #ffcc00)',
     },
     {
       category: 'General',
@@ -59,7 +73,15 @@ const CONFIG = {
       icon: 'outlook',
       quickLaunch: false,
     },
-
+        {
+            category: 'General',
+            name: 'Discord',
+            key: 'dc',
+            url: 'https://discordapp.com',
+            color: '#7289da',
+            icon: 'dc',
+            quickLaunch: true,
+        },
 
     {
       category: 'Tech',
@@ -149,6 +171,7 @@ const CONFIG = {
       key: 'px',
       url: 'https://app.plex.tv/desktop',
       color: 'linear-gradient(135deg, #E50914, #CB020C)',
+
       icon: 'plex',
       quickLaunch: true,
     },
@@ -161,47 +184,45 @@ const CONFIG = {
       color: '#1dd35e',
       icon: 'spotify',
       quickLaunch: false,
-    },
+        },
+        {
+            category: 'Fun',
+            name: '4chan',
+            key: '4c',
+            url: 'https://4chan.org',
+            color: 'linear-gradient(135deg, #ffccaa, #92c769)',
+            icon: '4c',
+            quickLaunch: true,
+        },
 
-
-    {
-      category: 'Server',
-      name: 'unRAID',
-      key: 'un',
-      url: 'https://leafandjam.duckdns.org',
-      search: '/search?q={}&src=typed_query',
-      color: 'linear-gradient(135deg, #1DA1F2, #19608F)',
-      icon: 'unraid',
-      quickLaunch: true,
-    },
-    {
-      category: 'Server',
-      name: 'Radarr',
-      key: 'ra',
-      url: 'https://leafandjam.duckdns.org/radarr',
-      color: 'linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)',
-      icon: 'radarr',
-      quickLaunch: true,
-    },
-    {
-      category: 'Server',
-      name: 'Sonarr',
-      key: 'so',
-      url: 'https://leafandjam.duckdns.org/sonarr',
-      search: '/search/results/all/?keywords={}',
-      color: 'linear-gradient(135deg, #006CA4, #0077B5)',
-      icon: 'sonarr',
-      quickLaunch: true,
-    },
-    {
-      category: 'Server',
-      name: 'Qbit',
-      key: 'qb',
-      url: 'https://leafqbit.duckdns.org',
-      color: 'linear-gradient(135deg, #FFF, #3F3F3F)',
-      icon: 'qbit',
-      quickLaunch: true,
-    },
+        {
+            category: 'Anime',
+            name: 'Gelbooru',
+            key: 'gb',
+            url: 'https://gelbooru.com',
+            color: 'linear-gradient(135deg, #006ffa, #005cd0)',
+            icon: 'gb',
+            search: 'index.php?page=post&s=list&tags={}',
+            quickLaunch: true,
+        },
+        {
+            category: 'Anime',
+            name: 'Danbooru',
+            key: 'db',
+            url: 'https://danbooru.donmai.us',
+            color: 'linear-gradient(135deg, #a9d4ff, #0077ff)',
+            icon: 'db',
+            quickLaunch: true,
+        },
+        {
+            category: 'Anime',
+            name: 'IQDB ',
+            key: 'iq',
+            url: 'https://iqdb.org',
+            color: '#dbdbdb',
+            icon: 'iq',
+            quickLaunch: true,
+        },
 
   ],
 
@@ -242,7 +263,7 @@ const CONFIG = {
    * Default search suggestions for the specified queries.
    */
   defaultSuggestions: {
-    g: ['g/issues', 'g/pulls', 'gist.github.com'],
+    gh: ['g/issues', 'g/pulls', 'gist.github.com'],
     r: ['r/r/unixporn', 'r/r/startpages', 'r/r/webdev', 'r/r/technology'],
   },
 
@@ -287,12 +308,12 @@ const CONFIG = {
   /**
    * The delimiter between the hours and minutes on the clock.
    */
-  clockDelimiter: ' ',
+  clockDelimiter: ':',
 
   /**
    * Show a twenty-four-hour clock instead of a twelve-hour clock with AM/PM.
    */
-  twentyFourHourClock: true,
+  twentyFourHourClock: false,
 
   /**
    * File extension for icon images

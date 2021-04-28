@@ -23,7 +23,8 @@ class Help {
     }
   
     hide() {
-      $.bodyClassRemove('form');
+        $.bodyClassRemove('form');
+        $.bodyClassRemove('dateTime');
       this._inputEl.value = '';
       this._inputElVal = '';
       this._suggester.suggest('');

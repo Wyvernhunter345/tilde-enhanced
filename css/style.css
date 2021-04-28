@@ -152,14 +152,13 @@ template {
 
 
 :root {
-  /* colors */
-  --background: #0E0E0E;
-  --foreground: #F1F1F1;
-
-  /* fonts */
-  --base-font-size: 18px;
-  --font-weight-normal: 500;
-  --font-weight-bold: 900;
+    /* colors */
+    --background: #2B2B2B;
+    --foreground: #ACCEE5;
+    /* fonts */
+    --base-font-size: 18px;
+    --font-weight-normal: 500;
+    --font-weight-bold: 900;
 }
 
 @font-face {
@@ -260,6 +259,17 @@ a:focus {
   text-align: center;
   letter-spacing: 0.05rem;
   cursor: pointer;
+}
+
+.datetime {
+    display: flex;
+    margin-top: -0.06rem;
+    font-size: 4rem;
+    font-weight: var(--font-weight-normal);
+    text-align: center;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    height: -10%;
 }
 
 .am-pm {

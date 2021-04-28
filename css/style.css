@@ -236,6 +236,7 @@ a:focus {
 .center {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -259,17 +260,18 @@ a:focus {
   text-align: center;
   letter-spacing: 0.05rem;
   cursor: pointer;
+  padding: 0px;
 }
 
 .datetime {
-    display: flex;
-    margin-top: -0.06rem;
-    font-size: 4rem;
+    position: absolute;
+    margin-top: 150px;
+    display: block;
+    font-size: 24px;
     font-weight: var(--font-weight-normal);
     text-align: center;
     letter-spacing: 0.05rem;
-    cursor: pointer;
-    height: -10%;
+    vertical-align: top;
 }
 
 .am-pm {

@@ -62,3 +62,7 @@ new Clock({
   toggleHelp: help.toggle,
   twentyFourHourClock: CONFIG.twentyFourHourClock,
 });
+
+new datetime({
+    toggleHelp: help.toggle,
+});

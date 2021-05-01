@@ -47,12 +47,11 @@ const CONFIG = {
     },
     {
       category: 'General',
-      name: 'Messages',
-      key: 'ms',
-      url: 'https://messages.google.com',
-      color: 'linear-gradient(135deg, #25D366, #128C7E, #075E54)',
-      icon: 'msg',
-      quickLaunch: false,
+      name: 'Canvas',
+      key: 'cv',
+        url: 'https://canvas.endeavour.sa.edu.au',
+        color: '#e23e29',
+      quickLaunch: true,
     },
     {
       category: 'General',
@@ -69,7 +68,7 @@ const CONFIG = {
             key: 'dc',
             url: 'https://discordapp.com',
             color: '#7289da',
-            icon: 'dc',
+            icon: 'discord',
             quickLaunch: true,
         },
 
@@ -137,16 +136,6 @@ const CONFIG = {
     },
     {
       category: 'Fun',
-      name: 'Plex',
-      key: 'px',
-      url: 'https://app.plex.tv/desktop',
-      color: 'linear-gradient(135deg, #E50914, #CB020C)',
-
-      icon: 'plex',
-      quickLaunch: true,
-    },
-    {
-      category: 'Fun',
       name: 'Spotify',
       key: 'sp',
       url: 'https://open.spotify.com/',
@@ -162,6 +151,15 @@ const CONFIG = {
             url: 'https://4chan.org',
             color: 'linear-gradient(135deg, #ffccaa, #92c769)',
             icon: '4c',
+            quickLaunch: true,
+        },
+        {
+            category: 'Fun',
+            name: 'Steam Unlocked',
+            key: 'su',
+            url: 'https://steamunlocked.net',
+            color: '#fe0000',
+            search: '/?s={}',
             quickLaunch: true,
         },
 

@@ -6,8 +6,17 @@ CONFIG.invertedColors = localStorage.getItem('invertColorCookie') ?
 // Get showKeys preference from cookies
 CONFIG.showKeys = localStorage.getItem('showKeysCookie') ?
   JSON.parse(localStorage.getItem('showKeysCookie')) :
-  CONFIG.showKeys;
+    CONFIG.showKeys;
 
+// Get date & time preference from cookies
+CONFIG.changeDateTime = localStorage.getItem('dateTimeCookie') ?
+    JSON.parse(localStorage.getItem('dateTimeCookie')) :
+        CONFIG.changeDatetime;
+
+// Get 12-hour or 24-hour clock preference from cookies
+CONFIG.twentyFourHourClock = localStorage.getItem('twentyFourHourCookie') ?
+    JSON.parse(localStorage.getItem('twentyFourHourCookie')) :
+        CONFIG.twentyFourHourClock;
 
 
 const queryParser = new QueryParser({
@@ -41,7 +50,8 @@ const help = new Help({
   newTab: CONFIG.newTab,
   suggester,
   invertedColors: CONFIG.invertedColors,
-  showKeys: CONFIG.showKeys
+    showKeys: CONFIG.showKeys
+
 });
 
 const form = new Form({
@@ -60,7 +70,8 @@ const form = new Form({
 new Clock({
   delimiter: CONFIG.clockDelimiter,
   toggleHelp: help.toggle,
-  twentyFourHourClock: CONFIG.twentyFourHourClock,
+    twentyFourHourClock: CONFIG.twentyFourHourClock,
+    datetime: CONFIG.changeDateTime,
 });
 
 new datetime({

@@ -54,6 +54,24 @@ class Form {
       localStorage.setItem('invertColorCookie', JSON.stringify(isInverted));
       location.reload();
     }
+
+    _dateTimeConfig() {
+        // Variable changedate is equal to the opposite of what the current config is
+        let changeDate = !CONFIG.changeDateTime;
+
+        // Set date & time cookie to this value
+        localStorage.removeItem('dateTimeCookie');
+        localStorage.setItem('dateTimeCookie', JSON.stringify(changeDate));
+
+        // Reload the page
+        location.reload();
+    }
+    _twentyFourHourConfig() {
+        let changeFormat = !CONFIG.twentyFourHourClock;
+        localStorage.removeItem('twentyFourHourCookie');
+        localStorage.setItem('twentyFourHourCookie', JSON.stringify(changeFormat));
+        location.reload();
+    }
   
     _showKeysConfig() {
       let isShowKeys = !CONFIG.showKeys;
@@ -76,11 +94,20 @@ class Form {
     }
   
     _handleInput() {
+      /** Logic to handle command input.
+       * ? - Launch menu screen
+       * q! - Launch every command tagged with quickLaunch
+       * invert! - Inverts colour scheme
+       * keys! - Displays key commands instead of icons
+       * date! - Changes date format
+       * 24! - Changes clock from 12-hour to 24-hour and vice versa */
       const newQuery = this._inputEl.value;
       const isHelp = newQuery === '?';
       const isLaunch = newQuery === 'q!';
       const isInvert = newQuery === 'invert!';
-      const isShowKeys = newQuery === 'keys!';
+        const isShowKeys = newQuery === 'keys!';
+        const isDateTime = newQuery === 'date!';
+        const isTwentyFourHour = newQuery === '24!';
       const isCategoryLaunch = this._isCategoryLaunch(newQuery);
       const { isKey } = this._parseQuery(newQuery);
       this._inputElVal = newQuery;
@@ -91,7 +118,9 @@ class Form {
       if (isLaunch) this._quickLaunch();
       if (isInvert) this._invertConfig();
       if (isShowKeys) this._showKeysConfig();
-      if (isCategoryLaunch) this._categoryLaunch();
+        if (isCategoryLaunch) this._categoryLaunch();
+        if (isDateTime) this._dateTimeConfig();
+        if (isTwentyFourHour) this._twentyFourHourConfig();
       if (this._instantRedirect && isKey) this._submitWithValue(newQuery);
     }
   

@@ -1,5 +1,6 @@
-# Tilde Enhanced
+# Tilde Enhanced - Wyvern's Fork
 
+My personal fork of this project, with added functionality and my own personal additions.
 Based on [Cade Scroggins](https://github.com/cadejscroggins)'s [Tilde](https://github.com/cadejscroggins/tilde).
 
 ## Screenshots 
@@ -11,11 +12,13 @@ Based on [Cade Scroggins](https://github.com/cadejscroggins)'s [Tilde](https://g
 Most of the features are carried over from the original source.
 Few of the added features are:
 
-- A launch category functionality, which launches every site in a category. Enter a category index number followed by `!`, i.e. `2!` would launch everything under the second category. 
-- A "Quick Launch" functionality, which launches every site with `quickLaunch` property set to `true` upon entering `q!`.
-- An invertible color theme. Either edit config or use `invert!` command.
-- Show image or SVG as bookmark icon
-- An option to show launch keys instead of icons. Either edit config or type `keys!`.
+- *Added the date underneath the time.* This functions to see what the date is at a glance and to accompany the time.
+- *There is no way to turn it off.* Angry? **Go use another fork.**
+- *Ability to change date & time format.* This is done by adjusting config or by typing `date!` into the search bar.
+- *Ability to change clock format* by typing `24!`.
+- *A better dark mode.* Hooray!
+- *Added alternative search engines such as Yandex & Google.*
+- Nothing else because I'm a lazy shit.
 
 ## Usage
 
@@ -35,8 +38,7 @@ configured easily by updating two lines on. Check [Configuration](#configuration
 
 You might have to allow pop-ups for your homepage to use quick launch feature.
 
-This version is not suitable for use on mobile as clicking on the clock will
-only bring up pre-defined sites.
+~~This version is not suitable for use on mobile as clicking on the clock will only bring up pre-defined sites.~~ I may work on this if I can be bothered.
 
 ### Searching
 

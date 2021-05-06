@@ -254,13 +254,14 @@ a:focus {
 
 .clock {
   display: block;
-  margin-top: -0.06rem;
+  position: absolute;
   font-size: 4rem;
   font-weight: var(--font-weight-normal);
   text-align: center;
   letter-spacing: 0.05rem;
   cursor: pointer;
   padding: 0px;
+  vertical-align: top;
 }
 
 .datetime {
@@ -268,10 +269,10 @@ a:focus {
     margin-top: 150px;
     display: block;
     font-size: 24px;
-    font-weight: var(--font-weight-normal);
     text-align: center;
     letter-spacing: 0.05rem;
     vertical-align: top;
+    font-weight: lighter;
 }
 
 .am-pm {

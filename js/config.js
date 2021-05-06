@@ -38,15 +38,6 @@ const CONFIG = {
     },
     {
       category: 'General',
-      name: 'Telegram',
-      key: 'tg',
-      url: 'https://web.telegram.org',
-      color: '#5682a3',
-      icon: 'telegram',
-      quickLaunch: false,
-    },
-    {
-      category: 'General',
       name: 'Canvas',
       key: 'cv',
         url: 'https://canvas.endeavour.sa.edu.au',
@@ -69,6 +60,16 @@ const CONFIG = {
             url: 'https://discordapp.com',
             color: '#7289da',
             icon: 'discord',
+            quickLaunch: true,
+        },
+        {
+            category: 'General',
+            name: 'Translate',
+            key: 'tr',
+            url: 'https://translate.google.com/',
+            search: '/#view=home&op=translate&sl=auto&tl=en&text={}',
+            color: '#1a73e8',
+            icon: 'translate',
             quickLaunch: true,
         },
 
@@ -111,13 +112,39 @@ const CONFIG = {
       color: '#212121',
       icon: 'codepen',
       quickLaunch: true,
-    },
-
+        },
+        {
+            category: 'Tech',
+            name: 'Archive',
+            key: 'ac',
+            url: 'https://archive.org',
+            search: '/search.php?query={}',
+            color: '#fcf5e6',
+            quickLaunch: true,
+        },
+        {
+            category: 'Tech',
+            name: 'DevDocs',
+            key: 'dd',
+            url: 'https://devdocs.io',
+            color: 'linear-gradient(135deg, #33373A, #484949)',
+            icon: 'devdocs',
+            quickLaunch: true,
+        },
+        {
+            category: 'Tech',
+            name: 'Jisho',
+            key: 'j',
+            url: 'https://jisho.org/',
+            search: '/search/{}',
+            color: 'linear-gradient(135deg, #59da2a, #5b5b5c)',
+            quickLaunch: true,
+        },
 
     {
       category: 'Fun',
       name: 'YouTube',
-      key: 'yt',
+      key: 'y',
       url: 'https://youtube.com',
       search: '/results?search_query={}',
       color: 'linear-gradient(135deg, #cd201f, #cd4c1f)',
@@ -127,12 +154,12 @@ const CONFIG = {
     {
       category: 'Fun',
       name: 'Reddit',
-      key: 're',
+      key: 'r',
       url: 'https://reddit.com',
       search: '/search?q={}',
       color: 'linear-gradient(135deg, #FF8456, #FF4500)',
       icon: 'reddit',
-      quickLaunch: false,
+      quickLaunch: true,
     },
     {
       category: 'Fun',
@@ -142,7 +169,15 @@ const CONFIG = {
       search: '/search/{}',
       color: '#1dd35e',
       icon: 'spotify',
-      quickLaunch: false,
+      quickLaunch: true,
+        },
+        {
+            category: 'Fun',
+            name: 'Roms',
+            key: 'rm',
+            url: 'https://r-roms.github.io/',
+            color: '#375a7f',
+            quickLaunch: true,
         },
         {
             category: 'Fun',
@@ -152,6 +187,16 @@ const CONFIG = {
             color: 'linear-gradient(135deg, #ffccaa, #92c769)',
             icon: '4c',
             quickLaunch: true,
+        },
+        {
+            category: 'Fun',
+            name: 'Twitch',
+            key: 'tw',
+            url: 'https://www.twitch.tv',
+            search: '/directory/game/{}',
+            color: 'linear-gradient(135deg, #6441a5, #4b367c)',
+            icon: 'twitch',
+            quickLaunch: false,
         },
         {
             category: 'Fun',
@@ -261,6 +306,11 @@ const CONFIG = {
    * Show keys instead of icons
    */
   showKeys: true,
+
+  /**
+   * Change how date and time is displayed
+   */
+  changeDateTime: false,
 
   /**
    * The delimiter between a command key and your search query. For example,

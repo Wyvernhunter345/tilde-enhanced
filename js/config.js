@@ -140,7 +140,15 @@ const CONFIG = {
             color: 'linear-gradient(135deg, #59da2a, #5b5b5c)',
             quickLaunch: true,
         },
-
+        {
+            category: 'Fun',
+            name: 'Pokemon Showdown',
+            key: 'p',
+            url: 'https://play.pokemonshowdown.com/',
+            color: 'linear-gradient(135deg, #E8EEFC, #D8DEEB)',
+            icon: 'showdown',
+            quickLaunch: false,
+        },
     {
       category: 'Fun',
       name: 'YouTube',
@@ -150,7 +158,17 @@ const CONFIG = {
       color: 'linear-gradient(135deg, #cd201f, #cd4c1f)',
       icon: 'youtube',
       quickLaunch: false,
-    },
+        },
+        {
+            category: 'Fun',
+            name: 'Lichess',
+            key: 'l',
+            url: 'https://lichess.org',
+            search: '/@/{}',
+            color: 'linear-gradient(135deg, #890E00, #954E86, #000052)'
+        },
+        
+
     {
       category: 'Fun',
       name: 'Reddit',
@@ -160,7 +178,19 @@ const CONFIG = {
       color: 'linear-gradient(135deg, #FF8456, #FF4500)',
       icon: 'reddit',
       quickLaunch: true,
-    },
+        },
+        {
+            
+            category: 'Fun',
+            name: 'Apple Music',
+            key: 'am',
+                url: 'https://music.apple.com/library/recently-added',
+                search: '/search?term={}',
+                color: '#EF2D46',
+            icon: 'music',
+            quickLaunch: true,
+        },
+        
     {
       category: 'Fun',
       name: 'Spotify',
